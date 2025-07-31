@@ -42,9 +42,11 @@ function TypeChooser({ setSelectedType, selectedType }) {
 
   const typesContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: "1rem",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "1.5rem",
     marginTop: "1rem",
+    maxWidth: "600px",
+    margin: "1rem auto 0 auto",
   };
 
   const typeCardStyle = (isSelected) => ({
