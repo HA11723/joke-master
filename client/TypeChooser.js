@@ -42,15 +42,15 @@ function TypeChooser({ setSelectedType, selectedType }) {
 
   const typesContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: "1rem",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    gap: "0.8rem",
     marginTop: "0.5rem",
-    maxWidth: "800px",
+    maxWidth: "1000px",
     margin: "0.5rem auto 0 auto",
   };
 
   const typeCardStyle = (isSelected) => ({
-    padding: "1.2rem",
+    padding: "1rem",
     borderRadius: "12px",
     cursor: "pointer",
     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -67,7 +67,7 @@ function TypeChooser({ setSelectedType, selectedType }) {
     position: "relative",
     overflow: "hidden",
     backdropFilter: "blur(10px)",
-    minHeight: "120px",
+    minHeight: "100px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -81,7 +81,7 @@ function TypeChooser({ setSelectedType, selectedType }) {
   };
 
   const typeTextStyle = (isSelected) => ({
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     fontWeight: isSelected ? "600" : "500",
     color: isSelected ? "#60a5fa" : "#e2e8f0",
     textTransform: "capitalize",
@@ -91,8 +91,8 @@ function TypeChooser({ setSelectedType, selectedType }) {
   });
 
   const typeIconStyle = {
-    fontSize: "2rem",
-    marginBottom: "0.5rem",
+    fontSize: "1.5rem",
+    marginBottom: "0.3rem",
     textAlign: "center",
     opacity: "0.9",
   };
@@ -179,10 +179,10 @@ function TypeChooser({ setSelectedType, selectedType }) {
               <h3 style={typeTextStyle(isSelected)}>{type}</h3>
               <p
                 style={{
-                  fontSize: "0.9rem",
+                  fontSize: "0.8rem",
                   color: isSelected ? "#94a3b8" : "#64748b",
                   textAlign: "center",
-                  margin: "0.5rem 0 0 0",
+                  margin: "0.3rem 0 0 0",
                   fontStyle: "italic",
                 }}
               >
