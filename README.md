@@ -40,7 +40,7 @@ A beautiful, modern React application that fetches and displays jokes from diffe
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/joke-master.git
+   git clone https://github.com/HA11723/joke-master.git
    cd joke-master
    ```
 
@@ -181,7 +181,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Hadi Nasir**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@HA11723](https://github.com/HA11723)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 
 ## 🙏 Acknowledgments
