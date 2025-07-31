@@ -33,7 +33,7 @@ function Joke({ selectedType }) {
   }, [selectedType]);
 
   const containerStyle = {
-    maxWidth: "1000px",
+    maxWidth: "100%",
     margin: "0 auto",
     padding: "1.5rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",

@@ -52,7 +52,7 @@ function App() {
   };
 
   const contentContainerStyle = {
-    maxWidth: "1200px",
+    maxWidth: "100%",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",

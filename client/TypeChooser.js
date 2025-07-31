@@ -9,15 +9,15 @@ function TypeChooser({ setSelectedType, selectedType }) {
 
   const typesContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     gap: "1rem",
     marginTop: "0.5rem",
-    maxWidth: "1000px",
+    maxWidth: "100%",
     margin: "0.5rem auto 0 auto",
     "@media (max-width: 768px)": {
       gridTemplateColumns: "1fr",
       gap: "0.8rem",
-      padding: "0 1rem",
+      padding: "0",
     },
   };
 
@@ -125,7 +125,7 @@ function TypeChooser({ setSelectedType, selectedType }) {
   };
 
   const containerStyle = {
-    maxWidth: "1000px",
+    maxWidth: "100%",
     margin: "0 auto",
     padding: "1.5rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
