@@ -8,9 +8,9 @@ function TypeChooser({ setSelectedType, selectedType }) {
   };
 
   const containerStyle = {
-    maxWidth: "800px",
+    maxWidth: "1000px",
     margin: "0 auto",
-    padding: "2rem",
+    padding: "1.5rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     backgroundColor: "rgba(30, 41, 59, 0.8)",
     borderRadius: "16px",
@@ -20,11 +20,11 @@ function TypeChooser({ setSelectedType, selectedType }) {
   };
 
   const titleStyle = {
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     fontWeight: "700",
     color: "#f8fafc",
     textAlign: "center",
-    marginBottom: "1.5rem",
+    marginBottom: "1rem",
     background: "linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -33,24 +33,24 @@ function TypeChooser({ setSelectedType, selectedType }) {
   };
 
   const subtitleStyle = {
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     color: "#94a3b8",
     textAlign: "center",
-    marginBottom: "2.5rem",
+    marginBottom: "1.5rem",
     fontWeight: "400",
   };
 
   const typesContainerStyle = {
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
-    gap: "1.5rem",
-    marginTop: "1rem",
-    maxWidth: "600px",
-    margin: "1rem auto 0 auto",
+    gap: "1rem",
+    marginTop: "0.5rem",
+    maxWidth: "800px",
+    margin: "0.5rem auto 0 auto",
   };
 
   const typeCardStyle = (isSelected) => ({
-    padding: "1.5rem",
+    padding: "1.2rem",
     borderRadius: "12px",
     cursor: "pointer",
     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -67,6 +67,10 @@ function TypeChooser({ setSelectedType, selectedType }) {
     position: "relative",
     overflow: "hidden",
     backdropFilter: "blur(10px)",
+    minHeight: "120px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   });
 
   const typeCardHoverStyle = {

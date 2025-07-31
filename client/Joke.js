@@ -33,9 +33,9 @@ function Joke({ selectedType }) {
   }, [selectedType]);
 
   const containerStyle = {
-    maxWidth: "800px",
+    maxWidth: "1000px",
     margin: "0 auto",
-    padding: "2rem",
+    padding: "1.5rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     backgroundColor: "rgba(30, 41, 59, 0.8)",
     borderRadius: "16px",
@@ -45,11 +45,11 @@ function Joke({ selectedType }) {
   };
 
   const titleStyle = {
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     fontWeight: "600",
     color: "#f8fafc",
     textAlign: "center",
-    marginBottom: "2rem",
+    marginBottom: "1.5rem",
     background: "linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -58,8 +58,8 @@ function Joke({ selectedType }) {
 
   const loadingStyle = {
     textAlign: "center",
-    padding: "3rem",
-    fontSize: "1.2rem",
+    padding: "2rem",
+    fontSize: "1.1rem",
     color: "#94a3b8",
     fontWeight: "500",
   };
@@ -67,31 +67,31 @@ function Joke({ selectedType }) {
   const jokeContainerStyle = {
     backgroundColor: "rgba(51, 65, 85, 0.6)",
     borderRadius: "12px",
-    padding: "2rem",
-    marginBottom: "2rem",
+    padding: "1.5rem",
+    marginBottom: "1.5rem",
     border: "1px solid rgba(148, 163, 184, 0.3)",
     position: "relative",
     backdropFilter: "blur(10px)",
   };
 
   const setupStyle = {
-    fontSize: "1.3rem",
+    fontSize: "1.2rem",
     color: "#e2e8f0",
     fontWeight: "500",
-    marginBottom: "1.5rem",
-    lineHeight: "1.6",
+    marginBottom: "1rem",
+    lineHeight: "1.5",
     textAlign: "center",
     fontStyle: "italic",
   };
 
   const punchlineStyle = {
-    fontSize: "1.5rem",
+    fontSize: "1.3rem",
     color: "#60a5fa",
     fontWeight: "700",
     textAlign: "center",
     margin: "0",
     lineHeight: "1.4",
-    padding: "1rem",
+    padding: "0.8rem",
     backgroundColor: "rgba(96, 165, 250, 0.15)",
     borderRadius: "8px",
     border: "2px solid rgba(96, 165, 250, 0.3)",
@@ -101,8 +101,8 @@ function Joke({ selectedType }) {
     background: "linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%)",
     color: "#ffffff",
     border: "none",
-    padding: "1rem 2rem",
-    fontSize: "1.1rem",
+    padding: "0.8rem 1.5rem",
+    fontSize: "1rem",
     fontWeight: "600",
     borderRadius: "12px",
     cursor: "pointer",
@@ -110,7 +110,7 @@ function Joke({ selectedType }) {
     boxShadow: "0 4px 6px rgba(96, 165, 250, 0.3)",
     display: "block",
     margin: "0 auto",
-    minWidth: "200px",
+    minWidth: "180px",
   };
 
   const buttonHoverStyle = {
@@ -120,8 +120,8 @@ function Joke({ selectedType }) {
 
   const placeholderStyle = {
     textAlign: "center",
-    padding: "3rem",
-    fontSize: "1.2rem",
+    padding: "2rem",
+    fontSize: "1.1rem",
     color: "#94a3b8",
     fontStyle: "italic",
     backgroundColor: "rgba(51, 65, 85, 0.4)",

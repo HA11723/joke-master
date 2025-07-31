@@ -9,18 +9,18 @@ function App() {
     minHeight: "100vh",
     background:
       "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)",
-    padding: "2rem 1rem",
+    padding: "1.5rem 1rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   };
 
   const headerStyle = {
     textAlign: "center",
-    marginBottom: "3rem",
+    marginBottom: "2rem",
     color: "#ffffff",
   };
 
   const mainTitleStyle = {
-    fontSize: "3.5rem",
+    fontSize: "3rem",
     fontWeight: "800",
     margin: "0 0 0.5rem 0",
     textShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
@@ -31,7 +31,7 @@ function App() {
   };
 
   const subtitleStyle = {
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     fontWeight: "300",
     margin: "0",
     opacity: "0.9",
@@ -44,7 +44,7 @@ function App() {
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",
-    gap: "3rem",
+    gap: "2rem",
   };
 
   return (
