@@ -11,12 +11,18 @@ function App() {
       "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)",
     padding: "1.5rem 1rem",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    "@media (max-width: 768px)": {
+      padding: "1rem 0.5rem",
+    },
   };
 
   const headerStyle = {
     textAlign: "center",
     marginBottom: "2rem",
     color: "#ffffff",
+    "@media (max-width: 768px)": {
+      marginBottom: "1.5rem",
+    },
   };
 
   const mainTitleStyle = {
@@ -28,6 +34,9 @@ function App() {
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     backgroundClip: "text",
+    "@media (max-width: 768px)": {
+      fontSize: "2.2rem",
+    },
   };
 
   const subtitleStyle = {
@@ -37,6 +46,9 @@ function App() {
     opacity: "0.9",
     textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
     color: "#cbd5e1",
+    "@media (max-width: 768px)": {
+      fontSize: "1rem",
+    },
   };
 
   const contentContainerStyle = {
@@ -45,6 +57,9 @@ function App() {
     display: "flex",
     flexDirection: "column",
     gap: "2rem",
+    "@media (max-width: 768px)": {
+      gap: "1.5rem",
+    },
   };
 
   return (

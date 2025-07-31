@@ -42,6 +42,11 @@ function Joke({ selectedType }) {
     boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
     border: "1px solid rgba(148, 163, 184, 0.2)",
     backdropFilter: "blur(10px)",
+    "@media (max-width: 768px)": {
+      padding: "1rem",
+      margin: "0 0.5rem",
+      borderRadius: "12px",
+    },
   };
 
   const titleStyle = {
@@ -54,6 +59,10 @@ function Joke({ selectedType }) {
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     backgroundClip: "text",
+    "@media (max-width: 768px)": {
+      fontSize: "1.4rem",
+      marginBottom: "1rem",
+    },
   };
 
   const loadingStyle = {
@@ -62,6 +71,10 @@ function Joke({ selectedType }) {
     fontSize: "1.1rem",
     color: "#94a3b8",
     fontWeight: "500",
+    "@media (max-width: 768px)": {
+      padding: "1.5rem",
+      fontSize: "1rem",
+    },
   };
 
   const jokeContainerStyle = {
@@ -72,6 +85,10 @@ function Joke({ selectedType }) {
     border: "1px solid rgba(148, 163, 184, 0.3)",
     position: "relative",
     backdropFilter: "blur(10px)",
+    "@media (max-width: 768px)": {
+      padding: "1rem",
+      marginBottom: "1rem",
+    },
   };
 
   const setupStyle = {
@@ -82,6 +99,10 @@ function Joke({ selectedType }) {
     lineHeight: "1.5",
     textAlign: "center",
     fontStyle: "italic",
+    "@media (max-width: 768px)": {
+      fontSize: "1.1rem",
+      lineHeight: "1.4",
+    },
   };
 
   const punchlineStyle = {
@@ -95,6 +116,10 @@ function Joke({ selectedType }) {
     backgroundColor: "rgba(96, 165, 250, 0.15)",
     borderRadius: "8px",
     border: "2px solid rgba(96, 165, 250, 0.3)",
+    "@media (max-width: 768px)": {
+      fontSize: "1.2rem",
+      padding: "0.6rem",
+    },
   };
 
   const buttonStyle = {
@@ -111,6 +136,11 @@ function Joke({ selectedType }) {
     display: "block",
     margin: "0 auto",
     minWidth: "180px",
+    "@media (max-width: 768px)": {
+      padding: "0.7rem 1.2rem",
+      fontSize: "0.95rem",
+      minWidth: "160px",
+    },
   };
 
   const buttonHoverStyle = {
@@ -127,6 +157,10 @@ function Joke({ selectedType }) {
     backgroundColor: "rgba(51, 65, 85, 0.4)",
     borderRadius: "12px",
     border: "2px dashed rgba(148, 163, 184, 0.4)",
+    "@media (max-width: 768px)": {
+      padding: "1.5rem",
+      fontSize: "1rem",
+    },
   };
 
   const typeBadgeStyle = {

@@ -7,46 +7,18 @@ function TypeChooser({ setSelectedType, selectedType }) {
     setSelectedType(type);
   };
 
-  const containerStyle = {
-    maxWidth: "1000px",
-    margin: "0 auto",
-    padding: "1.5rem",
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    backgroundColor: "rgba(30, 41, 59, 0.8)",
-    borderRadius: "16px",
-    boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
-    border: "1px solid rgba(148, 163, 184, 0.2)",
-    backdropFilter: "blur(10px)",
-  };
-
-  const titleStyle = {
-    fontSize: "2rem",
-    fontWeight: "700",
-    color: "#f8fafc",
-    textAlign: "center",
-    marginBottom: "1rem",
-    background: "linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    backgroundClip: "text",
-    textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
-  };
-
-  const subtitleStyle = {
-    fontSize: "1rem",
-    color: "#94a3b8",
-    textAlign: "center",
-    marginBottom: "1.5rem",
-    fontWeight: "400",
-  };
-
   const typesContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "0.8rem",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gap: "1rem",
     marginTop: "0.5rem",
     maxWidth: "1000px",
     margin: "0.5rem auto 0 auto",
+    "@media (max-width: 768px)": {
+      gridTemplateColumns: "1fr",
+      gap: "0.8rem",
+      padding: "0 1rem",
+    },
   };
 
   const typeCardStyle = (isSelected) => ({
@@ -71,6 +43,13 @@ function TypeChooser({ setSelectedType, selectedType }) {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    "@media (max-width: 768px)": {
+      minHeight: "80px",
+      padding: "1.2rem",
+      flexDirection: "row",
+      alignItems: "center",
+      gap: "1rem",
+    },
   });
 
   const typeCardHoverStyle = {
@@ -88,6 +67,10 @@ function TypeChooser({ setSelectedType, selectedType }) {
     textAlign: "center",
     margin: "0",
     transition: "color 0.3s ease",
+    "@media (max-width: 768px)": {
+      fontSize: "1.1rem",
+      textAlign: "left",
+    },
   });
 
   const typeIconStyle = {
@@ -95,6 +78,11 @@ function TypeChooser({ setSelectedType, selectedType }) {
     marginBottom: "0.3rem",
     textAlign: "center",
     opacity: "0.9",
+    "@media (max-width: 768px)": {
+      fontSize: "2rem",
+      marginBottom: "0",
+      flexShrink: "0",
+    },
   };
 
   const selectedIndicatorStyle = {
@@ -134,6 +122,52 @@ function TypeChooser({ setSelectedType, selectedType }) {
       dad: "Dad jokes that never get old",
     };
     return descriptions[type] || "Funny jokes";
+  };
+
+  const containerStyle = {
+    maxWidth: "1000px",
+    margin: "0 auto",
+    padding: "1.5rem",
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    backgroundColor: "rgba(30, 41, 59, 0.8)",
+    borderRadius: "16px",
+    boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
+    border: "1px solid rgba(148, 163, 184, 0.2)",
+    backdropFilter: "blur(10px)",
+    "@media (max-width: 768px)": {
+      padding: "1rem",
+      margin: "0 0.5rem",
+      borderRadius: "12px",
+    },
+  };
+
+  const titleStyle = {
+    fontSize: "2rem",
+    fontWeight: "700",
+    color: "#f8fafc",
+    textAlign: "center",
+    marginBottom: "1rem",
+    background: "linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+    textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
+    "@media (max-width: 768px)": {
+      fontSize: "1.5rem",
+      marginBottom: "0.8rem",
+    },
+  };
+
+  const subtitleStyle = {
+    fontSize: "1rem",
+    color: "#94a3b8",
+    textAlign: "center",
+    marginBottom: "1.5rem",
+    fontWeight: "400",
+    "@media (max-width: 768px)": {
+      fontSize: "0.9rem",
+      marginBottom: "1rem",
+    },
   };
 
   return (
@@ -184,6 +218,11 @@ function TypeChooser({ setSelectedType, selectedType }) {
                   textAlign: "center",
                   margin: "0.3rem 0 0 0",
                   fontStyle: "italic",
+                  "@media (max-width: 768px)": {
+                    fontSize: "0.75rem",
+                    textAlign: "left",
+                    margin: "0.2rem 0 0 0",
+                  },
                 }}
               >
                 {getTypeDescription(type)}
